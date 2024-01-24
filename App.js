@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { TextInput, View } from "react-native";
+import Screen from "./app/components/Screen";
+import Icon from "./app/components/Icon";
+import ListItem from "./app/components/ListItem";
+import AccountScreen from "./app/screens/AccountScreen";
+import ListingScreen from "./app/screens/ListingScreen";
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+ return(
+  <Screen>
+    <TextInput placeholder="FirstName"/>
+  </Screen>
+
+ );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
+// npm start
+// rsf
+//rnss
+//expo custom fonts, expo icons (4-7)
+//android ios 4-8
+//viewimagescreen materialcommunityicon
+// 5-3 for padding top in ios and andorid
